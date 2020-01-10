@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    printf("program to store student details and display");
+    char name[20];
+    int num;
+    float mark;
+    int input;
+    printf("enter the name \n");
+    gets(name);
+    printf("enter the roll number\n");
+    scanf("%d",&num);
+    printf("enter the mark");
+    scanf("%f",&mark);
+    printf("enter the number for details\n");
+    scanf("%d",&input);
+    if(input==num)
+    {
+        puts(name);
+        printf("\n%d",num);
+        printf("\n%f",mark);
+    }
+    else
+    printf("invalid\n");
+}
