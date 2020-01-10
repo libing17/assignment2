@@ -21,7 +21,7 @@ void main()
     printf("enter the roll number\n");
     scanf("%d",&info[i].num);
      printf("enter the name \n");
-    scanf("%19s",info[i].name,20);
+    scanf("%s",info[i].name);
     printf("enter the mark");
     scanf("%f",&info[i].mark);
     }
