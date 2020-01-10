@@ -1,25 +1,60 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+
+
 #include<stdio.h>
 #include<stdlib.h>
+struct student
+{char name[20];
+ int num;
+ float mark;
+};
+
 void main()
 {
-    printf("program to store student details and display");
-    char name[20];
-    int num;
-    float mark;
+    printf("program to store student details and display\n");
+    struct student info[2];
+  
     int input;
-    printf("enter the name \n");
-    gets(name);
+  
+      
     printf("enter the roll number\n");
-    scanf("%d",&num);
+    scanf("%d",&info[0].num);
+     printf("enter the name \n");
+    scanf("%s",info[0].name);
     printf("enter the mark");
-    scanf("%f",&mark);
+    scanf("%f",&info[0].mark);
+      char y[20];
+   
+   
+    
+    printf("enter the roll number\n");
+    scanf("%d",&info[1].num);
+     printf("enter the name \n");
+    scanf("%s",info[1].name);
+    printf("enter the mark");
+    scanf("%f",&info[1].mark);
+ 
+   
     printf("enter the number for details\n");
     scanf("%d",&input);
-    if(input==num)
+    if(input==info[0].num)
     {
-        puts(name);
-        printf("\n%d",num);
-        printf("\n%f",mark);
+        puts(info[0].name);
+        printf("\n%d",info[0].num);
+        printf("\n%f",info[0].mark);
+    }
+    else if(input==info[1].num)
+    {
+        puts(info[1].name);
+        printf("\n%d",info[1].num);
+        printf("\n%f",info[1].mark);
     }
     else
     printf("invalid\n");
