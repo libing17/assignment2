@@ -19,9 +19,9 @@ void main()
      struct student info[total];
     for(int i=0;i<total;i++){  
     printf("enter the roll number\n");
-    scanf("%19s",info[i].num,20);
+    scanf("%d",&info[i].num);
      printf("enter the name \n");
-    scanf("%s",&info[i].name);
+    scanf("%19s",info[i].name,20);
     printf("enter the mark");
     scanf("%f",&info[i].mark);
     }
